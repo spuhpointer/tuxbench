@@ -1,0 +1,24 @@
+all:	benchflds.fd.h benchsv benchclt
+
+benchsv:	benchsv.c
+	gcc -o benchsv benchsv.c \
+	-I. -I $(NDRX_HOME)/include \
+	-L $(NDRX_HOME)/lib \
+	-latmisrv -latmi -lubf -lnstd -lrt -ldl -lm
+
+#
+# Benchmark client
+#
+benchclt:	benchclt.c
+	gcc -o benchclt benchclt.c \
+	-I. -I $(NDRX_HOME)/include \
+	-L $(NDRX_HOME)/lib \
+	-latmiclt -latmi -lubf -lnstd -lrt -ldl -lm
+
+#
+# Rule for creating field header file
+#
+benchflds.fd.h:	benchflds.fd 
+	$(XCBINDIR)/mkfldhdr benchflds.fd
+
+benchsv.c benchclt.c:	benchflds.fd.h

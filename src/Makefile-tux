@@ -1,0 +1,68 @@
+XCBINDIR=$(TUXDIR)/bin
+INCDIR=$(TUXDIR)/include
+LIBDIR=.
+SUF=.a
+DSUF=.a
+PRE=$(LIBDIR)/lib
+CFLAGS= -I$(INCDIR) $(CGFLAG)
+#
+# C executable files to create
+#
+OBJS = \
+	benchsv
+
+SRC = \
+	benchsv.c \
+	
+
+#
+# C functions 
+#
+CFUNC = \
+	benchsv.c\
+	benchclt.c
+#
+#
+# Object files (.o)
+#
+COBJ =	\
+	benchsv.o\
+	benchclt.c
+
+all:	benchflds.fd.h benchsv benchclt
+
+# Rule for cleaning out generated files
+#
+clean:
+	rm -f $(OBJS)
+
+benchsv:	benchsv.o 
+	CFLAGS="$(CFLAGS)" \
+	TUXDIR=$(TUXDIR) \
+	$(XCBINDIR)/buildserver \
+		-s BENCHSVC \
+		-o benchsv \
+		-f benchsv.o
+
+#
+# Benchmark client
+#
+benchclt:	benchclt.c
+	TUXDIR=$(TUXDIR) \
+	$(XCBINDIR)/buildclient -o benchclt -f "benchclt.c -Wl,--no-as-needed"
+
+# Rule for creating field header file
+#
+benchflds.fd.h:	benchflds.fd 
+	$(XCBINDIR)/mkfldhdr32 benchflds.fd
+
+.SUFFIXES: .c .o
+
+#
+# Rule for creating object files from C programs
+#
+.c.o:
+	$(CC) $(CFLAGS) -c $*.c
+
+benchsv.o benchclt.o:	benchflds.fd.h
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export TUXDIR=/home/mvitolin/OraHome_1/tuxedo12.2.2.0.0
+export TUXCONFIG=`pwd`/tuxconfig
+export MKFLDCMD=mkfldhdr32
+export PATH=$PATH:`pwd`/../bin

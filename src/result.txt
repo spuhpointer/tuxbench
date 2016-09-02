@@ -1,0 +1,29 @@
+"Configuration" "MsgSize" "CallsPerSec"
+"Enduro/X 3.2 Linux 64bit" 1024 41144
+"Enduro/X 3.2 Linux 64bit" 5120 33778
+"Enduro/X 3.2 Linux 64bit" 9216 29147
+"Enduro/X 3.2 Linux 64bit" 13312 25052
+"Enduro/X 3.2 Linux 64bit" 17408 22136
+"Enduro/X 3.2 Linux 64bit" 21504 18543
+"Enduro/X 3.2 Linux 64bit" 25600 16826
+"Enduro/X 3.2 Linux 64bit" 29696 15459
+"Enduro/X 3.2 Linux 64bit" 33792 14215
+"Enduro/X 3.2 Linux 64bit" 37888 13370
+"Enduro/X 3.2 Linux 64bit" 41984 12479
+"Enduro/X 3.2 Linux 64bit" 46080 11740
+"Enduro/X 3.2 Linux 64bit" 50176 11102
+"Enduro/X 3.2 Linux 64bit" 54272 10474
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 1024 25146
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 5120 21749
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 9216 3980
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 13312 3869
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 17408 3685
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 21504 3506
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 25600 3328
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 29696 3228
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 33792 3018
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 37888 2931
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 41984 2822
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 46080 2721
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 50176 2621
+"Oracle Tuxedo 12.2.2.0.0 Linux 64bit" 54272 2547

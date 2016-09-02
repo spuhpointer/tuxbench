@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<endurox>
+	<appconfig>
+		<sanity>5</sanity>
+		<brrefresh>6</brrefresh>
+		<restart_min>1</restart_min>
+		<restart_step>1</restart_step>
+		<restart_max>5</restart_max>
+		<restart_to_check>20</restart_to_check>
+		<gather_pq_stats>Y</gather_pq_stats>
+	</appconfig>
+	<defaults>
+		<min>1</min>
+		<max>2</max>
+		<autokill>1</autokill>
+		<start_max>2</start_max>
+		<pingtime>1</pingtime>
+		<ping_max>4</ping_max>
+		<end_max>5</end_max>
+		<killtime>1</killtime>
+	</defaults>
+	<servers>
+		<server name="benchsv">
+			<srvid>100</srvid>
+			<min>1</min>
+			<max>1</max>
+			<sysopt>-e /tmp/EX_BENCHSV -r</sysopt>
+		</server>
+	</servers>
+</endurox>
