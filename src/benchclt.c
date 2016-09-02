@@ -53,7 +53,7 @@ int main(int argc, char** argv)
 	}
         
 	/* Have some header */
-	append_text_file("results.txt", "\"Configuration\" \"MsgSize\" \"CallsPerSec\"\n");
+	append_text_file("result.txt", "\"Configuration\" \"MsgSize\" \"CallsPerSec\"\n");
 		
 	/* Do some stuff for charts... */
 	for (j=1; j<56; j=(j==0?j=1:j+4))
