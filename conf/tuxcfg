@@ -1,6 +1,6 @@
 *RESOURCES
 IPCKEY		0x10200
-MASTER		macintosh
+MASTER		mypc
 UID		1000
 GID		1000
 PERM		0600
@@ -37,16 +37,16 @@ SIGNATURE_BEHIND	604800
 USIGNAL		SIGUSR2
 
 *MACHINES
-macintosh	LMID=macintosh 
-	TUXCONFIG="/home/mvitolin/projects/tuxbench/conf/tuxconfig"
-	TUXDIR="/home/mvitolin/OraHome_1/tuxedo12.2.2.0.0"
-	APPDIR="/home/mvitolin/projects/tuxbench/bin"
+mypc	LMID=mypc 
+	TUXCONFIG="/home/user1/projects/tuxbench/conf/tuxconfig"
+	TUXDIR="/home/user1/OraHome_1/tuxedo12.2.2.0.0"
+	APPDIR="/home/user1/projects/tuxbench/bin"
 	TYPE="AIX" 
-	TLOGDEVICE="/home/mvitolin/projects/tuxbench/conf/tuxconfig"
+	TLOGDEVICE="/home/user1/projects/tuxbench/conf/tuxconfig"
 	TLOGNAME="TLOG"
 	TLOGSIZE=100
-	ULOGPFX="/home/mvitolin/projects/tuxbench/logs/ULOG"
-	ENVFILE="/home/mvitolin/projects/tuxbench/conf/tuxenv" 
+	ULOGPFX="/home/user1/projects/tuxbench/logs/ULOG"
+	ENVFILE="/home/user1/projects/tuxbench/conf/tuxenv" 
 	CMPLIMIT="MAXLONG,MAXLONG"
 	NETLOAD=0
 	SPINCOUNT=0
@@ -57,10 +57,10 @@ macintosh	LMID=macintosh
 
 
 *GROUPS
-"tst"		LMID="macintosh"	GRPNO=1 TMSCOUNT=3
-"txnreq"	LMID="macintosh"	GRPNO=3 TMSCOUNT=3
-"txnrsp"	LMID="macintosh"	GRPNO=4 TMSCOUNT=3
-"tmevents"	LMID="macintosh"	GRPNO=6 TMSCOUNT=2
+"tst"		LMID="mypc"	GRPNO=1 TMSCOUNT=3
+"txnreq"	LMID="mypc"	GRPNO=3 TMSCOUNT=3
+"txnrsp"	LMID="mypc"	GRPNO=4 TMSCOUNT=3
+"tmevents"	LMID="mypc"	GRPNO=6 TMSCOUNT=2
 
 
 
@@ -70,8 +70,8 @@ macintosh	LMID=macintosh
 
 #GWWS        SRVGRP="tst" SRVID=3 CLOPT="-A -- -i TuxAll"
 
-"TMUSREVT"	SRVGRP="tst"	SRVID=20 CLOPT=" -A -- -f /home/mvitolin/projects/tuxbench/conf/TMUSREVT"
-"TMSYSEVT"	SRVGRP="tmevents" SRVID=25 RESTART=Y GRACE=900 MAXGEN=5 CLOPT="-A -- -f /home/mvitolin/projects/tuxbench/conf/TMSYSEVT"
+"TMUSREVT"	SRVGRP="tst"	SRVID=20 CLOPT=" -A -- -f /home/user1/projects/tuxbench/conf/TMUSREVT"
+"TMSYSEVT"	SRVGRP="tmevents" SRVID=25 RESTART=Y GRACE=900 MAXGEN=5 CLOPT="-A -- -f /home/user1/projects/tuxbench/conf/TMSYSEVT"
 
 DEFAULT: SRVGRP=tst RESTART=Y MAXGEN=25 RQPERM=0660 RPPERM=0660 REPLYQ=Y GRACE=0 MIN=1 MAX=1 CLOPT="-A" CONV=N SYSTEM_ACCESS=FASTPATH
 

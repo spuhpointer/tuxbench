@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export NDRX_HOME=/home/mvitolin/projects/endurox/dist
+export NDRX_HOME=/home/user1/projects/endurox/dist
 export NDRX_APPHOME=`pwd`/..
 export NDRX_CCONFIG=`pwd`/endurox.ini
 export MKFLDCMD=mkfldhdr
