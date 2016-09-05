@@ -41,7 +41,6 @@ mypc	LMID=mypc
 	TUXCONFIG="/home/user1/projects/tuxbench/conf/tuxconfig"
 	TUXDIR="/home/user1/OraHome_1/tuxedo12.2.2.0.0"
 	APPDIR="/home/user1/projects/tuxbench/bin"
-	TYPE="AIX" 
 	TLOGDEVICE="/home/user1/projects/tuxbench/conf/tuxconfig"
 	TLOGNAME="TLOG"
 	TLOGSIZE=100
