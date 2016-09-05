@@ -58,9 +58,6 @@ mypc	LMID=mypc
 
 *GROUPS
 "tst"		LMID="mypc"	GRPNO=1 TMSCOUNT=3
-"txnreq"	LMID="mypc"	GRPNO=3 TMSCOUNT=3
-"txnrsp"	LMID="mypc"	GRPNO=4 TMSCOUNT=3
-"tmevents"	LMID="mypc"	GRPNO=6 TMSCOUNT=2
 
 
 
